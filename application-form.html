@@ -1,0 +1,36 @@
+<!doctype html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>Skills-HTML-CSS</title>
+        <link rel="stylesheet" type="text/css" href="styles.css">
+    </head>
+    <body>
+        <!-- your html goes here -->
+        <section id='page-heading-description'>
+            <h1>Want to work for Roo?</h1>
+            <h5>There's not much to explain at this point.<br>
+            Hope you like dreaming big dreams. And drinking coffee.<br>
+            <br>
+            A lot of coffee.</h5>
+        </section>
+        <section id='job-app-section'>
+            <form id='job-app' action='/application' method='post'>
+                <label name='firstname'>First Name: <input type='text' class='form-input' id ='firstname'>
+                <label name='lastname'>Last name: <input type='text'  class='form-input' id='lastname'><br>
+                <br>
+                <label name='salary'>Salary: <input type='number' class='form-input' id='salary'><br>
+                <br>
+                <label name='job-interest'>Job interested in: <select  class='form-input' id='job-interest'>
+                    <option value='software-engineer'>Software Engineer</option>
+                    <option value='qa-engineer'>QA Engineer</option>
+                    <option value='product-manager'>Product Manager</option>
+                    <option value='product-manager'>Barista. Seriously.</option>
+                    </select><br>
+                <br>
+                <input type='submit' class='form-input' id='submitbutton' value='Submit'>
+            </form>
+        </section>
+        
+    </body>
+</html>

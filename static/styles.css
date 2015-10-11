@@ -1,0 +1,51 @@
+/*Your styles can go here.*/
+
+body {
+    width: 400px;
+}
+
+
+h1 {
+    border-bottom: solid;
+    font-size: 20px;
+    text-align: center
+}
+
+h5 {
+    border: solid;
+    border-color: yellow;
+    padding: 10px;
+}
+
+form {
+    border: solid;
+    border-color: yellow;
+    padding: 10px;
+}
+
+.form-input {
+    background-color: yellow;
+}
+
+#lastname {
+    font-weight: bold;
+}
+
+#submitbutton {
+    font-size: 15px;
+    border-width: 1px;
+    border-style: groove;
+    border-color: black;
+
+}
+
+#flash-messages {
+
+}
+
+
+
+
+
+
+
