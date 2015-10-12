@@ -1,12 +1,6 @@
-<!doctype html>
-<html>
-    <head>
-        <meta charset="UTF-8">
-        <title>Skills-HTML-CSS</title>
-        <link rel="stylesheet" type="text/css" href="static/styles.css">
-    </head>
-    <body>
+{% extends 'base.html' %}
         <!-- your html goes here -->
+{% block content %}
         <section class="subheader" id='app-form-heading'>
             <h1>Want to work for Roo?</h1>
             <h5>There's not much to explain at this point.<br>
@@ -22,15 +16,13 @@
                 <label>Salary: <input type='number' name='salary' class='form-input' id='salary'><br>
                 <br>
                 <label>Job interested in: <select name='jobtype' class='form-input' id='jobtype'>
-                    <option value='software-engineer'>Software Engineer</option>
-                    <option value='qa-engineer'>QA Engineer</option>
-                    <option value='product-manager'>Product Manager</option>
-                    <option value='product-manager'>Barista</option>
+                    <option value='software engineer'>Software Engineer</option>
+                    <option value='QA engineer'>QA Engineer</option>
+                    <option value='product manager'>Product Manager</option>
+                    <option value='barista'>Barista</option>
                     </select><br>
                 <br>
                 <input type='submit' class='form-input' id='submitbutton' value='Submit'>
             </form>
         </section>
-        
-    </body>
-</html>
+{% endblock %}

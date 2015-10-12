@@ -1,7 +1,7 @@
 /*Your styles can go here.*/
 
 body {
-    width: 400px;
+    width: 500px;
 }
 
 
@@ -14,13 +14,13 @@ h1 {
 h5 {
     border: solid;
     border-color: yellow;
-    padding: 10px;
+    padding: 15px;
 }
 
 form {
     border: solid;
     border-color: yellow;
-    padding: 10px;
+    padding: 15px;
 }
 
 .form-input {
@@ -38,11 +38,6 @@ form {
     border-color: black;
 
 }
-
-#flash-messages {
-
-}
-
 
 
 

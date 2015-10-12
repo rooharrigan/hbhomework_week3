@@ -18,6 +18,9 @@ def show_form_submission_details():
     """Shows completion message after the form is submitted."""
 
     print "You're in the application-form route"
+    print request
+    print request.form
+    print type(request)
     fname = request.form.get("fname")
     lname = request.form.get("lname")
     jobtype = request.form.get("jobtype")
