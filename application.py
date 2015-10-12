@@ -1,4 +1,5 @@
-from flask import Flask, render_template, request, flash
+from flask import Flask, render_template, request, send_from_directory
+import os
 
 app = Flask(__name__)
 app.secret_key = "psh you don't know me"
@@ -7,27 +8,28 @@ print "The app is running in the console."
 
 @app.route("/")
 def show_index_page():
-    """Shows the form."""
+    """Shows the hoempage form for the job application."""
 
-    print "You're in the home route"
     return render_template("application-form.html")
+
+
+@app.route('/favicon.ico')
+def favicon():
+    """Creates a favicon for the title tab."""
+
+    return send_from_directory(os.path.join(app.root_path, 'static'),
+                               'lightning_favicon.ico', mimetype='image/vnd.microsoft.icon')
 
 
 @app.route("/application-form", methods=['POST'])
 def show_form_submission_details():
-    """Shows completion message after the form is submitted."""
+    """Shows summary page with sheep image after the form is submitted."""
 
-    print "You're in the application-form route"
-    print request
-    print request.form
-    print type(request)
     fname = request.form.get("fname")
     lname = request.form.get("lname")
     jobtype = request.form.get("jobtype")
     unformatted_salary = request.form.get("salary")
     salary = "${:,.2f}".format(int(unformatted_salary))
-
-    flash("Sheep is happy you applied.")
 
     return render_template("application-response.html", fname=fname, lname=lname, jobtype=jobtype, salary=salary)
 
